@@ -1,4 +1,4 @@
-# [1] Technology Roadmap Guide - Focusing on the Automotive Industry
+# [1] Technology Roadmap Guide
 
 ## 📌 Overview
 
