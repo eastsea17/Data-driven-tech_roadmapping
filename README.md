@@ -119,7 +119,13 @@
 *   **Linkedin**: [https://www.linkedin.com/donghakim417](https://www.linkedin.com/donghakim417)
 *   **개인 이메일**: eastsea17@gmail.com
 
+
 <hr/>
+<hr/>
+<hr/>
+<hr/>
+<hr/>
+
 
 # 데이터 기반 기술동향 분석 기초 가이드
 
