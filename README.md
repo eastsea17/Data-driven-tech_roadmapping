@@ -1,334 +1,331 @@
-# [1] 기술 로드맵 수립 가이드 - 자동차 산업 중심
+# [1] Technology Roadmap Guide - Focusing on the Automotive Industry
 
-## 📌 개요
+## 📌 Overview
 
-이 문서는 기술 로드맵의 개념부터 실제 구축 방법론, 그리고 경험 공유까지 포괄적으로 다루어 기술 로드맵 수립에 대한 이해를 돕고자 합니다.
+This document aims to enhance the understanding of technology roadmap establishment by comprehensively covering the concept of a technology roadmap, its actual construction methodologies, and experience sharing.
 
-## 📚 목차
+## 📚 Table of Contents
 
-1.  **기술에 대한 이해**
-    *   기술의 정의
-    *   기술의 종류(Type)
-    *   유망 기술의 기준 및 센싱
-    *   기술 수준(Level)
-    *   유망 기술 센싱에 필요한 데이터
-    *   Gartner Hype Cycle & MIT 혁신 기술 예시
-2.  **기술로드맵 개요**
-    *   기술로드맵(TRM) 정의 및 필요성
-    *   기술로드맵(TRM) 구성 요소
-    *   기술로드맵(TRM) 특징
-    *   기술로드맵핑 정의 및 필요성
-    *   기술 혁신의 깔대기(innovation Funnel)
-    *   미래 예측 방법론
-    *   기술로드맵핑과 미래예측 방법론의 관계
-3.  **기술로드맵핑 방법론**
-    *   데이터 분석 기반 로드맵핑
-        *   시작점 및 방법론
-        *   탐색적 분석(EDA)
-        *   데이터 기반 기술로드맵핑 단계
-        *   데이터 기반 로드맵핑 목표
-        *   로드맵핑에 필요한 정보
-        *   데이터 수집, 정제/시각화, 클러스터링, 해석, 심층분석, 평가
-        *   데이터 검증 및 기술 트렌드 분석의 시간-비용 문제
-        *   분석 결과 평가 기준
-    *   워크샵 기반 로드맵핑
-        *   워크샵 필요성
-        *   기술 평가 워크샵
-        *   S-Plan (Lv.1~2 수준의 트렌드/기술 도출)
-        *   T-Plan (Lv.3 수준의 기술 도출)
-        *   소비자(고객)와 함께 워크샵
-        *   외부 기술 전문가와 함께 워크샵
-        *   디지털 비대면 워크샵
-4.  **기술로드맵핑 관련 경험 공유**
-    *   내부 정보를 잘 알고 있을 때 vs 외부 공개된 정보만 활용할 때
-    *   양산 R&D 조직의 기술로드맵핑 필요성
-    *   데이터 기반 기술로드맵핑의 산업 확장 가능성
-    *   소비자 의견의 중요성
-    *   기술로드맵의 구성 및 데이터 기반 로드맵핑에 필요한 지식/스킬
+1.  **Understanding Technology**
+    *   Definition of Technology
+    *   Types of Technology
+    *   Criteria and Sensing of Promising Technologies
+    *   Technology Levels
+    *   Data Needed for Sensing Promising Technologies
+    *   Examples: Gartner Hype Cycle & MIT Innovation Technology
+2.  **Technology Roadmap Overview**
+    *   Definition and Necessity of Technology Roadmap (TRM)
+    *   Components of a Technology Roadmap (TRM)
+    *   Characteristics of a Technology Roadmap (TRM)
+    *   Definition and Necessity of Technology Roadmapping
+    *   The Innovation Funnel
+    *   Future Prediction Methodologies
+    *   Relationship between Technology Roadmapping and Future Prediction Methodologies
+3.  **Technology Roadmapping Methodology**
+    *   Data Analysis Based Roadmapping
+        *   Starting Point and Methodology
+        *   Exploratory Data Analysis (EDA)
+        *   Steps in Data-Based Technology Roadmapping
+        *   Objectives of Data-Based Roadmapping
+        *   Information Required for Roadmapping
+        *   Data Collection, Refinement/Visualization, Clustering, Interpretation, In-depth Analysis, Evaluation
+        *   Data Verification and Time-Cost Issues of Technology Trend Analysis
+        *   Evaluation Criteria of Analysis Results
+    *   Workshop-Based Roadmapping
+        *   Necessity of Workshops
+        *   Technology Evaluation Workshops
+        *   S-Plan (Level 1~2 Trend/Technology Derivation)
+        *   T-Plan (Level 3 Technology Derivation)
+        *   Workshops with Consumers (Customers)
+        *   Workshops with External Technology Experts
+        *   Digital Non-Face-to-Face Workshops
+4.  **Experience Sharing Related to Technology Roadmapping**
+    *   When Internal Information Is Well Understood vs. When Only Publicly Available Information Is Used
+    *   The Necessity of Technology Roadmapping for Mass Production R&D Organizations
+    *   Industrial Expandability of Data-Based Technology Roadmapping
+    *   Importance of Consumer Opinion
+    *   Technology Roadmap Configuration and Required Knowledge/Skills for Data-Based Roadmapping
 
-## 💡 세부 내용
+## 💡 Detailed Contents
 
-### 1. 기술에 대한 이해
+### 1. Understanding Technology
 
-*   **기술의 정의**: 과학을 활용하여 인간 효용을 증가시키는 데 필요한 지식, 경험, 노하우, 물리적 실체 및 절차의 총체
-*   **기술의 종류**: 기능 관점에서 기반, 표준, 응용, 첨단, 독점, 기지, 핵심, 부상, 탐색 기술 등으로 분류
-*   **유망 기술의 기준**: 연구원 개인, 조직에 따라 다를 수 있으며, 기술 중요도, 자사 역량, 최신성, 파급성 등의 관점 고려
-*   **기술 수준(Level)**: 전략 기술(Lv1~2)과 TRM 기술(Lv3~4)로 구분
-*   **유망 기술 센싱 데이터**: 경쟁사 R&D 활동 데이터(특허, 논문), 뉴스, 매체 정보, R&D 펀딩 데이터 등
-*   **Gartner Hype Cycle & MIT 혁신 기술**: 미래 유망 기술 트렌드를 파악하는 데 활용
+*   **Definition of Technology**: The totality of knowledge, experience, know-how, physical entities, and procedures necessary to produce items and services that increase human utility by using science.
+*   **Types of Technology**: Classified functionally into basic, standard, applied, cutting-edge, proprietary, known, core, emerging, and scouting technologies, etc.
+*   **Criteria for Promising Technologies**: May vary by researcher or organization and consider the importance of technology, the capabilities of the company, timeliness, and impact.
+*   **Technology Level**: Classified into strategic technology (Lv1~2) and TRM technology (Lv3~4).
+*   **Data Needed for Sensing Promising Technologies**: Competitor R&D activity data (patents, papers), news, media information, R&D funding data, etc.
+*   **Gartner Hype Cycle & MIT Innovation Technology**: Utilized to grasp future promising technology trends.
 
-### 2. 기술로드맵 개요
+### 2. Technology Roadmap Overview
 
-*   **기술로드맵(TRM)**: 미래 시장 예측 기반, 미래 수요 충족을 위한 기술 및 제품 개발 계획
-*   **TRM 구성 요소**: 외부 환경/동인, 내부 전략 방향, 기능/제품/시스템 분류, 기술 로드맵, 기타 고려 사항
-*   **TRM 특징**: 대외비/기밀 자료, 커뮤니케이션 툴, 최소 매년 1회 수정
-*   **기술로드맵핑**: 기술 로드맵 작성을 위한 체계화된 프로세스
-*   **기술 혁신의 깔때기**: 창의성, 전문성, 상호작용, 데이터 기반 방법론 활용
-*   **미래 예측 방법론**: 시나리오, 전문가 패널, 로드맵핑, 델파이, 인터뷰, 문헌 고찰 등 다양한 방법론 조합 활용
-*   **기술로드맵핑과 미래예측 방법론**: 밀접한 연관성 가지며, 기술/제품/서비스 로드맵핑에 활용
+*   **Technology Roadmap (TRM)**: A comprehensive plan including the anticipation of future markets and projecting necessary technologies and products to be developed to meet future demand, in order to select the best technical alternatives.
+*   **TRM Components**: Consists of external environment/driver, internal strategic direction, function/product/system classification, technology roadmap, and other considerations.
+*   **TRM Characteristics**: Mostly confidential/secret data, a communication tool, must be revised at least once a year.
+*   **Technology Roadmapping**: A systematized process for creating a technology roadmap.
+*   **Innovation Funnel**: Utilizes methodologies based on creativity, expertise, interaction, and data.
+*  **Future Prediction Methodologies**: Utilizes various methods such as scenarios, expert panels, roadmapping, Delphi, interviews, literature reviews, etc. in combination.
+*   **Relationship between Technology Roadmapping and Future Prediction Methodologies**: There is a close relationship, and this is used in technology/product/service roadmapping.
 
-### 3. 기술로드맵핑 방법론
+### 3. Technology Roadmapping Methodology
 
-#### 3.1. 데이터 분석 기반 로드맵핑
+#### 3.1. Data Analysis Based Roadmapping
 
-*   **시작점**: 기술 분류, 기술 생태계 시각화, 정확한 트렌드 도출, 벤치마킹 기술 발굴
-*   **방법론**: 비지도학습(텍스트 마이닝, 클러스터링, 네트워크 분석), 평가 지표 구축, 의사결정 방법론
-*   **탐색적 분석(EDA)**: 데이터 기반 새로운 기술 트렌드/분류 도출
-*   **데이터 기반 기술로드맵핑 단계**: 데이터 수집 → 정제/시각화 → 기술 클러스터링 → 기술 군집 해석 → 심층 분석 → 데이터 평가 → 의사결정 및 인사이트 도출
-*   **데이터 기반 로드맵핑 목표**: 정확한 경쟁사/미래 기술 트렌드, 다양한 관점 분석 결과, 벤치마킹 기술 선별
-*   **로드맵핑 필요 정보**: 고객 VOC, 정책/규제, 경쟁사 정보, 전문가 인터뷰/워크샵, 자사 R&D 계획
-*   **데이터 분석 과정**:
-    1.  **데이터 수집**: 정책/규제, 시장/산업, R&D 투자, 매체, 논문, 특허 정보
-    2.  **데이터 정제/시각화**: 문헌 유사도 매트릭스, 네트워크 분석
-    3.  **기술 클러스터링**: 유사 기술 문헌 그룹화
-    4.  **기술 군집 해석**: 기술 지식 기반 군집 명칭 라벨링
-    5.  **기술 군집별 심층분석**: 통계 및 정성 분석
-    6.  **데이터 평가**: 상대 평가, 양적/질적 지표 활용
-*   **데이터 검증**: 기술 전문가의 해석 필요
-*   **기술 트렌드 분석**: 빅데이터 분석, 시간-비용 고려, 단기/장기적 관점
-*   **분석 평가 기준**: 현업 연구원 수준의 기술 분석, 시각화, 의사결정 지원, 동의 가능한 기술 분류, 현업 용어 반영, 정보 체계화
+*   **Starting Point**: How to classify (clustering, classification) "technology" well through data analysis, how to visualize "technology ecosystems" well through data analysis, how to derive "accurate technology trends" through data analysis, and whether it is possible to extract "truly good technologies (competitive technologies worth benchmarking)" through data analysis.
+*   **Methodology**: Unsupervised learning such as text mining, clustering, network analysis, etc.; also includes methodology to suggest 'promising technologies' by evaluating 'data' through constructing evaluation indicators, calculation by evaluation indicators, decision-making methodology, and supervised learning, etc. It is also important to identify/evaluate promising technologies by reading each item of data (patent/paper).
+*   **Exploratory Data Analysis (EDA)**: In order to find and derive "new technology trends/classifications"
+*   **Steps in Data-Based Technology Roadmapping**: Data Collection → Data Refinement/Visualization → Technology Clustering → Technology Group Interpretation → In-depth Analysis → Data Evaluation → Decision Making and Deriving Insight.
+*   **Goals of Data-Based Roadmapping**: Provides accurate competitor technology trends (based on publicly available data), provides accurate future technology trends (the trend line must accurately show the rise or fall), provides analysis results of technology trends from various perspectives (viewpoint of vehicle, performance, competitor, technology, evaluation, etc), and provides the maximum external trend data for technology roadmapping. Selects patent/papers(technologies) from competitors and leading companies that have value and are worth benchmarking, and then provides this pool and a deep analysis of the detailed contents of each patent/paper to the researchers.
+*   **Information Required for Roadmapping**: Customer complaints/opinions (VOC), policy/regulation information, competitor M&A information, competitor media information, competitor paper information, competitor patent information, expert interview results, expert workshop results, company internal R&D plan (top-down strategy), and technology roadmaps and internal R&D results that have been created yearly.
+*  **Data Analysis Process**:
+    1.  **Data Collection**: Policy/regulatory information, market/industry information, (of each global country) R&D investment information, media information, paper information, patent information.
+    2.  **Data Refinement/Visualization**: Derivation of a literature similarity matrix using text mining (cosine similarity, Jaccard similarity, Word2Vec, Doc2Vec, etc.), and network analysis (graph theory, node/edge, direction of edge, relationship (co-occurrence, citation relationship, etc.), 1 or 2 mode network, Centrality statistic, etc.).
+    3.  **Technology Clustering Analysis**: Utilizing algorithms that group together similar technical documents. Necessary knowledge of text mining and network clustering methodologies is required.
+    4.  **Technology Group Interpretation**: Extract the main data characteristics (keywords, technology classification, etc.) of each technology group and label each technology group with a representative name using technical knowledge.  Requires not only data analysis such as text mining, but also technical knowledge.
+    5.  **In-depth Analysis by Technology Group**: Performing statistical analysis and qualitative analysis of the data included in each technology group.
+    6.  **Data Evaluation**: Evaluation: Absolute evaluation, relative evaluation ☞ relative evaluation. Patent evaluation is not an 'absolute evaluation' but rather for a 'relative evaluation' between patents within a patent pool. Evaluation indicators: quantitative, qualitative indicators ☞ uses both quantitative/qualitative indicators. Patent evaluation score = (evaluation indicator 1 + evaluation indicator 2 + evaluation indicator 3 + .....). Generally, the higher the number of independent claims and citations, the better the qualitative patents.
+*   **Data Verification**: Interpretation by a technology expert is needed.
+*   **Technology Trend Analysis**: Technology trend analysis is "big data analysis" and can consume a lot of time and money. Thus, an analysis framework must be well crafted. Can be broken into: \[1] Analysis of a specific technology field (analysis of the technology trends of competitors in that organization's R&D area); \[2] Analysis of a specific technology field and each field of A, B, and C (analysis of technology trends in that organization's R&D area or surrounding areas); \[3] Analysis of the entire industry including a specific technology field (analysis of metal light weight technology trends in various industries, not just the automobile industry).
+*   **Analysis Evaluation Criteria**: Has an in-depth technology analysis report been written to be close to the technical knowledge/level of the current researchers? Has the data been visualized to enable the current researchers to grasp the technology ecosystem of competitors at a glance? Has a report been written that can help the current researchers decide on their strategic direction by looking at the technology ecosystem of competitors? Has a technology classification (clustering-based analysis) been selected that can be agreed upon by current researchers? Has the report been written based on the "current terminology" used by the current researchers? Has the technology knowledge that the current researchers already know been formalized/systematized and visualized in a report? Has information that the current researchers do not know well been systematically written?
 
-#### 3.2. 워크샵 기반 로드맵핑
+#### 3.2. Workshop-Based Roadmapping
 
-*   **워크샵 필요성**: 경쟁사 내부 정보 부족 한계 극복, 독자적인 목표 및 기술 도출
-*   **기술 평가 워크샵**: 기술 Pool 구성 후, 내부/외부 전문가 평가, 유망/혁신 기술 선별
-*   **S-Plan (Lv.1~2)**: 큰 그림, 전략 방향 도출, 외부 환경/동인 검토, 브레인스토밍
-*   **T-Plan (Lv.3)**: 개발 기술 선정, 기술 로드맵 배치, 경쟁사 기술 동향 분석
-*   **소비자 워크샵**: 소비자 의견 수렴, 설문 조사, 텍스트 마이닝 활용
-*   **외부 기술 전문가 워크샵**: 전문가 인사이트 활용, 기술 평가 및 도출 지원
-*   **디지털 비대면 워크샵**: 화상 회의, 코디네이터 지원, 가이드라인 및 결과물 양식 제공
+*   **Necessity of Workshops**: The most important information needed for TRM is competitor internal information; However, competitor internal information is secret. Top tier consulting firms utilize such information through their networks, but the cost of consulting is very expensive. Thus, the most cost effective method to create TRM is to analyze publicly available big data, however, this is only useful from the standpoint of a follower. From the standpoint of a first-mover, information analysis is only a supplementary means. Setting independent goals and deriving technology through technical workshops is more important.
+*   **Technology Evaluation Workshops**: A workshop in which the key personnel of an organization come together to set long-term goals and derive detailed technologies that correspond to these goals; A technology pool must have been formed before the workshop.  Internal and external experts come together to evaluate technologies, select promising/innovative technologies, classify technologies to be developed for short/mid/long term, and evaluate marketability/business potential/technical aspects. There is also the advantage of being able to deeply review a single technology with many people together.  Internal experts know the internal resources, infrastructure, and technology levels well. External experts have a technical trend and solution at the Level 3~4 that they are currently researching. A technical management expert knows the technical trends at the Level 1~2 well and has a wide knowledge of many technical fields, and is skilled at evaluating converged technologies.
+*   **S-Plan (Lv. 1~2 Trend/Technology Derivation)**: Workshops to draw the big picture and derive strategic direction, examine various external environments/drivers at a broad level, and through brainstorming, each participant in the workshop derives (external environment/driver - product - technology) as a set (idea). The work to review these ideas internally by arranging them in a roadmap is then carried out.
+*   **T-Plan (Lv. 3 Technology Derivation)**: A workshop to select technologies to develop and place them in the technology roadmap. The (environment - product - technology) sets from the S-plan are re-examined to determine the technologies to develop. The technology trends of competitors are analyzed and used as reference data for the workshop participants, then the technology roadmaps are completed by product/system/subject.
+*   **Consumer Workshops**: This is a workshop to reflect consumer (customer) opinions into the technology roadmap.  Primarily, consumers are called to participate in a brainstorming session in S-Plan.  However, there are many processes required to basically reflect consumer opinions into technologies, and from the standpoint of the one creating the technology roadmap, consumer opinion is more appropriately collected through the following methods, instead of through workshops. It is possible to carry out surveys to determine consumer preference for certain products, (utilizing Conjoint analysis and AHP, etc.). By analyzing the opinions and emotions of consumers, one can analyze whether there is usability when matching products/systems/technologies and establishing a technology strategy.  However, consumers generally do not have much interest in "technology itself" but only express the "products/services" that they have. Consumer's technical insight is subjective, and a separate dimension is required to apply this to the technology development sector (using QFD, etc).
+*   **External Technology Expert Workshops**: A workshop to derive insights on the future technologies using external, credible experts. Seminars may be hosted just before the workshop by inviting experts who have high knowledge/insight in technology in order to raise the technological knowledge of workshop participants. Experts can participate directly in the workshop to evaluate technologies and to assist in deriving technologies. However, participation in the actual technology roadmap drawing process is not possible (the principle being that technology roadmaps must not be made public to any organization). The personnel from component companies and cooperating companies that participate directly in technology development are also eligible.
+*  **Digital Non-Face-to-Face Workshops**: Workshops are carried out exclusively through video conferences. Each organization can form groups by subject, gather at different places, and perform the workshop simultaneously with a camera in front of them. The coordinator directly monitors the process of the workshop, and must respond to technical/methodological questions in real-time.  Accurate guidelines and result formats/examples must be provided.
 
-### 4. 기술로드맵핑 관련 경험 공유
+### 4. Experience Sharing Related to Technology Roadmapping
 
-*   **데이터 기반 로드맵핑**: 설득력 높으나, 장기 기술 발굴 한계
-*   **워크샵 기반 로드맵핑**: 컨센서스 구축, 결과물 편차 가능성
-*   **내부 정보 vs 외부 정보**: 내부 정보 기반 실질적 기술 제안, 외부 정보 객관적 결과
-*   **양산 R&D 조직**: 중장기 기술로드맵핑 필요, 상용화 가능성 높은 기술 선별
-*   **산업 확장 가능성**: 자동차 산업 외 다른 산업에서는 제한적(반도체, IT), 서비스 로드맵핑은 가능
-*   **소비자 의견**: 니즈 명확한 기술은 중요, 기술 전략 수준 반영, Lead user 워크샵 대안
-*   **기술로드맵 구성**: 경쟁사/자사 동향, 기술 개발 방향, 기술 트리, 기술 로드맵 포함
-*   **필요 지식/스킬**: 기술경영, 공학 지식, 통계/데이터 분석, 자연어처리, 데이터베이스, 의사결정 방법론 등
+*   **Data-Based Technology Roadmapping**: The advantage is that this is the most persuasive and effective method for technology roadmapping (grasping external competitor technology ☞ utilizing it in one's own roadmapping). The disadvantage is that it is difficult to discover technologies to be developed in the long term. One cannot break free from being a fast follower.
+*   **Workshop-Based Technology Roadmapping**: The advantage is that consensus can be reached among researchers with many vested interests. The disadvantage is that different results can come out depending on the location/time/members.
+*   **When Internal Information Is Well Understood**: The advantage is that truly needed technologies can be proposed internally.  Unnecessary technologies (technologies already developed internally or reviewed) do not need to be proposed. The disadvantage is that the conclusion is decided according to the technology trends and flow shown in the internal information (possibility of having a result without impact).
+*   **When Only Publicly Available Information Is Used**: The advantage is that because the process is done without internal information (without any internal help), the result has a strong, objective character. It is accepted even if it is a predictable result.  The disadvantage is that it may not match the internal strategic direction or flow (like a witch doctor catching a man).
+*   **The Necessity of Technology Roadmapping for Mass Production R&D Organizations**: Generally, the mass production R&D organization develops technologies by focusing on product lineups within the 3~5 year period, but mid- to long-term technology roadmapping is also needed. An advantage of the mass production organization is that because technology development is linked to production, they are considered to have the ability to select technologies with high commercialization potential, and thus they are at an advantage when evaluating proposed technologies. A disadvantage of the mass production organization is that they focus mainly on improvement technologies, rather than innovative technologies, and thus it is difficult to propose technologies that match their very high level of technological knowledge/difficulty.
+*   **Industrial Expandability of Data-Based Technology Roadmapping**: It is considered to be impossible. In the semiconductor industry, it is about the struggle of process. In the IT industry, customer needs differ greatly and there is a fast adoption of new technologies. It is difficult to obtain competitor information from publicly available information (patents/papers) and it is more a domain of know-how than technology development by publicly available technology literature.  However, 'service roadmapping' and not technology roadmapping, is considered to be possible (ex. mobility and IT service roadmaps, etc.).
+*   **Importance of Consumer Opinion**: Technologies with clear consumer needs are important (ex. IT, consumer goods, vehicle interiors, etc). In areas where consumer needs are not clear, it is difficult to move to technology roadmapping. Consumer opinions are reflected in technology roadmaps at the 'technology strategy' level, but not usually at the 'component technology' level. Lead user workshops (from MIT) are one alternative.
+*   **Technology Roadmap Configuration**: The technology roadmap includes all of the information below: Competitor strategy/technology trend, one's own strategy/technology trend, technology development direction, technology tree, technology roadmap.
+*   **Required Knowledge/Skills for Data-Based Technology Roadmapping**: Technical management knowledge, basic engineering knowledge (mechanical, electrical, chemical, etc), statistical analysis (time series analysis, etc), data analysis (clustering, network analysis, literature analysis, etc), and other things such as natural language processing, database, decision-making methodology, and surveys (conjoint analysis, etc.).
 
-## 📝 결론
+## 📝 Conclusion
 
-기술 로드맵은 미래를 예측하고, 조직의 기술 개발 방향을 설정하는 데 매우 중요한 도구입니다. 데이터 분석과 워크샵을 적절히 활용하여 효과적인 기술 로드맵을 수립할 수 있으며, 각 조직의 특성과 상황에 맞는 접근 방식이 필요합니다. 이 문서를 통해 기술 로드맵 수립에 대한 이해를 높이고, 실제 업무에 적용할 수 있기를 바랍니다.
+A technology roadmap is a crucial tool for anticipating the future and setting the direction of an organization's technology development. An effective technology roadmap can be created by properly utilizing both data analysis and workshops, and a method of approach suitable for each organization's characteristics and situation is needed. I hope that this document can raise the understanding of technology roadmap creation, and be applied in actual work.
 
-## 🔗 발표자 정보
+## 🔗 Instructor Information
 
-*   **강사명**: 김동하
+*   **Instructor**: Dongha Kim
 *   **Linkedin**: [https://www.linkedin.com/donghakim417](https://www.linkedin.com/donghakim417)
-*   **개인 이메일**: eastsea17@gmail.com
+*   **Personal Email**: eastsea17@gmail.com
 
 
 <hr/>
-<hr/>
-<hr/>
-<hr/>
-<hr/>
 
 
-# [2] 데이터 기반 기술동향 분석 기초 가이드
+# [2] Data-Driven Technology Trend Analysis Basics Guide
 
-## 📌 개요
+## 📌 Overview
 
-이 문서는 특허 데이터를 활용한 기술 동향 분석의 기초를 다루며, 데이터 수집, 분석, 시각화, 그리고 이를 실습합니다.
+This document covers the basics of technology trend analysis using patent data, including data collection, analysis, visualization, and practical exercises.
 
-## 📚 목차
+## 📚 Table of Contents
 
-1.  **강사 소개**
-2.  **본 특강의 목적 및 목표**
-3.  **기술 센싱/분석 프로세스**
-    *   데이터 수집
-    *   데이터 시각화
-    *   기술 클러스터링
-    *   기술 군집 해석
-    *   기술 군집별 심층 분석
-    *   기술(특허) 평가
-    *   의사결정 및 인사이트 도출
-4.  **기술 센싱/분석의 목적**
-    *   기술 동향 분석 목적
-    *   R&D 전략 수립 목적
-    *   기술 사업화 목적
-5.  **기술 로드맵(TRM) 및 구성 요소**
-    *   기술 로드맵(TRM) 정의
-    *   TRM 구성 요소 (외부 환경/동인, 내부 전략 방향, 기능/제품/시스템 분류, 기술 로드맵, 기타 고려 사항)
-6.  **기술로드맵핑 정의**
-7.  **기술의 정의 및 분류**
-    *   기술의 정의
-    *   기술의 종류(Type)
-    *   유망 기술 기준
-    *   데이터 분석 관점의 유망 기술
-    *   기술 수준(Level)
-    *   기술 센싱/분석을 위한 데이터
-8.  **기술 탐색**
-    *   Lv.3~4 수준의 세부 기술 탐색
-    *   Lv.1~2 수준의 전략 기술 탐색
-    *   Gartner Hype Cycle & MIT 10대 혁신 기술
-9.  **기술 혁신의 과정 (Innovation Funnel)**
-10. **일반적인 미래 예측 방법**
-    *   창의성 기반, 전문성 기반, 상호작용 기반, 데이터(증거) 기반 방법론
-11. **네트워크 분석**
-    *   네트워크 분석 정의
-    *   네트워크 분석 필요 데이터
-    *   네트워크 분석에 필요한 행렬 (Node-Edge-Weight 행렬, 인접 행렬)
-    *   관계성(Relationship) 정의
-    *   동시출현 (Co-occurrence)
-    *   방향성
-    *   Centrality 통계량 (Degree, Closeness, Betweenness, Eigenvector)
-    *   HITS 통계량
-    *   1/2 Mode 네트워크
-12. **특허 데이터**
-    *   특허의 정의
-    *   특허의 생(生)과 사(死)
-    *   특허 출원 및 등록 절차
-    *   특허 데이터/DB 및 주요 Field
-    *   논문 데이터/DB
-    *   패밀리 특허
-    *   동시출현 및 방향성 Field
-    *   특허의 문제점
-13. **특허 검색식 작성**
-    *   Field 선별 (키워드, CPC)
-    *   키워드 검색 및 CPC 검색
-    *   NOT 조건 (불용어 및 불필요한 CPC 제외)
-    *   기타 고려사항 (국가, 데이터 범위 등)
-14. **Gephi 활용 및 실습**
-    *   Gephi 소개 및 기능
-    *   화면 꾸미기 및 Plugin 설치
-    *   데이터 Import (Excel/CSV 파일)
-    *   Statistics 구하기 및 Modularity 분석
-    *   Node 색칠 및 Layout 조절
+1.  **Instructor Introduction**
+2.  **Objectives and Goals of This Special Lecture**
+3.  **Technology Sensing/Analysis Process**
+    *   Data Collection
+    *   Data Visualization
+    *   Technology Clustering
+    *   Technology Group Interpretation
+    *   In-Depth Analysis by Technology Group
+    *   Technology (Patent) Evaluation
+    *   Decision Making and Insight Derivation
+4.  **Objectives of Technology Sensing/Analysis**
+    *   Technology Trend Analysis Objectives
+    *   R&D Strategy Establishment Objectives
+    *   Technology Commercialization Objectives
+5.  **Technology Roadmap (TRM) and Components**
+    *   Definition of Technology Roadmap (TRM)
+    *   TRM Components (External Environment/Drivers, Internal Strategic Direction, Function/Product/System Classification, Technology Roadmap, Other Considerations)
+6.  **Definition of Technology Roadmapping**
+7.  **Definition and Classification of Technology**
+    *   Definition of Technology
+    *   Types of Technology
+    *   Criteria for Promising Technologies
+    *   Promising Technology from a Data Analysis Viewpoint
+    *   Technology Levels
+    *   Data for Technology Sensing/Analysis
+8.  **Technology Exploration**
+    *   Level 3-4 Detailed Technology Exploration
+    *   Level 1-2 Strategic Technology Exploration
+    *   Gartner Hype Cycle & MIT 10 Innovation Technologies
+9.  **The Technology Innovation Process (Innovation Funnel)**
+10. **General Future Prediction Methods**
+    *   Creativity-Based, Expertise-Based, Interaction-Based, Data (Evidence)-Based Methodologies
+11. **Network Analysis**
+    *   Definition of Network Analysis
+    *   Data Required for Network Analysis
+    *   Matrices Required for Network Analysis (Node-Edge-Weight Matrix, Adjacency Matrix)
+    *   Definition of Relationship
+    *   Co-occurrence
+    *   Directionality
+    *   Centrality Statistics (Degree, Closeness, Betweenness, Eigenvector)
+    *   HITS Statistics
+    *   1/2 Mode Network
+12. **Patent Data**
+    *   Definition of Patents
+    *   Patent Life and Death
+    *   Patent Application and Registration Process
+    *   Patent Data/DB and Main Fields
+    *   Paper Data/DB
+    *   Patent Family
+    *   Co-occurrence and Directionality Fields
+    *   Problems of Patents
+13. **Formulating Patent Search Queries**
+    *   Field Selection (Keyword, CPC)
+    *   Keyword Search and CPC Search
+    *   NOT Conditions (Excluding Stop Words and Unnecessary CPCs)
+    *   Other Considerations (Country, Data Range, etc.)
+14. **Using Gephi and Practice**
+    *   Introduction of Gephi and Features
+    *   Setting Up the Screen and Installing Plugins
+    *   Importing Data (Excel/CSV files)
+    *   Obtaining Statistics and Modularity Analysis
+    *   Coloring Nodes and Adjusting Layout
     *   Node/Edge Filtering
-    *   Data laboratory 활용
+    *   Utilizing Data Laboratory
     *   Preview
-15. **문서 유사도 네트워크**
+15. **Document Similarity Network**
     *   One-hot vector
     *   TF-IDF
     *   Dense vector (Doc2Vec)
     *   Bibliographic coupling
-16. **기타 툴 소개**
-    *   UNICET, Pajek 등
+16. **Introduction of Other Tools**
+    *   UNICET, Pajek, etc.
 
-## 💡 세부 내용
+## 💡 Detailed Contents
 
-### 1. 강사 소개
+### 1. Instructor Introduction
 
-*   **강사**: 김동하
-*   **학력**: 연세대 일반대학원 산업공학과 석사
-*   **강의 분야**: 데이터 분석을 통한 기술동향 분석/기술 유망성 분석
-*   **주요 경력**: 현대엔지비 기술정보팀 (2015~현재)
+*   **Instructor**: Dongha Kim
+*   **Education**: Master's degree in Industrial Engineering, Yonsei University Graduate School
+*   **Lecture Area**: Technology trend analysis/promising technology analysis through data analysis
+*   **Main Career**: Technology Information Team at Hyundai NGVs (2015-Present)
 
-### 2. 본 특강의 목적 및 목표
+### 2. Objectives and Goals of This Special Lecture
 
-*   **목적**: 특허 데이터 수집/정제, 클러스터링을 통해 사업 아이템과 연관된 기술 탐색
-*   **목표**: 사업 아이템 관련 기술 탐색 및 분석, 특허 데이터 검색, 기술 동향 분석 수행 능력 함양
+*   **Objective**: To explore technologies related to our business items by collecting/refining patent data and Clustering
+*   **Goals**: To acquire the ability to explore and analyze technologies related to business items, search patent data, and conduct technology trend analysis.
 
-### 3. 기술 센싱/분석 프로세스
+### 3. Technology Sensing/Analysis Process
 
-*   **단계**: 데이터 수집 → 데이터 시각화 → 기술 클러스터링 → 기술 군집 해석 → 기술 군집별 심층분석 → 기술(특허) 평가 → 의사결정 및 인사이트 도출
-*   **도구**: Gephi, VOS Viewer
-*   **핵심**: 데이터 이해, 그래프 이론 기반 네트워크 분석, 군집 분석, 텍스트 마이닝
+*   **Steps**: Data Collection → Data Visualization → Technology Clustering → Technology Group Interpretation → In-Depth Analysis by Technology Group → Technology (Patent) Evaluation → Decision Making and Insight Derivation
+*   **Tools**: Gephi, VOS Viewer
+*   **Core**: Understanding data, graph theory-based network analysis, clustering analysis, text mining
 
-### 4. 기술 센싱/분석의 목적
+### 4. Objectives of Technology Sensing/Analysis
 
-*   **기술 동향 분석 목적**: 세부 기술 구성 파악, 기반/응용 기술 구성 파악, 경쟁사 R&D 활동 파악
-*   **R&D 전략 수립 목적**: 자사 R&D 전략 방향성 수립, 기술로드맵핑 근거, 유망 기술 발굴
-*   **기술 사업화 목적**: 기술 사업화를 위한 단계적 접근, 의사 결정 과정
+*   **Technology Trend Analysis Objectives**: Understand detailed technology composition, identify basic/application technology composition, grasp competitor R&D activities
+*   **R&D Strategy Establishment Objectives**: Establish the direction of the company's R&D strategy, use as a basis for technology roadmapping, and find promising technologies.
+*   **Technology Commercialization Objectives**: Adopt a step-by-step approach for technology commercialization, establish a decision-making process
 
-### 5. 기술 로드맵(TRM) 및 구성 요소
+### 5. Technology Roadmap (TRM) and Components
 
-*   **정의**: 미래 시장 예측 기반, 미래 수요 충족을 위한 기술 및 제품 개발 계획
-*   **구성 요소**: 외부 환경/동인, 내부 전략 방향, 기능/제품/시스템 분류, 기술 로드맵, 기타 고려 사항
+*   **Definition**: A comprehensive plan that includes projecting necessary technologies and products to be developed to meet future demand, based on predictions of the future market, in order to select the optimal technological alternatives.
+*   **Components**: External environment/drivers, internal strategic direction, function/product/system classification, technology roadmap, other considerations.
 
-### 6. 기술로드맵핑 정의
+### 6. Definition of Technology Roadmapping
 
-*   **정의**: 기술로드맵 작성을 위한 체계화된 프로세스, 시장/제품/기술 탐색 및 정의
+*   **Definition**: A systematized process for creating a technology roadmap, the process of searching for and defining markets, products, and technologies.
 
-### 7. 기술의 정의 및 분류
+### 7. Definition and Classification of Technology
 
-*   **정의**: 과학을 활용하여 인간 효용을 증진시키는 지식, 경험, 노하우, 물리적 실체, 절차의 총체
-*   **종류**: 기반, 표준, 응용, 첨단, 독점, 기지, 핵심, 부상, 탐색 기술 등
-*   **유망 기술**: 개인/조직에 따라 다를 수 있으며, 기술 중요도, 자사 역량, 최신성, 파급성 고려
-*   **데이터 분석 관점**: 최신성, 파급성 관점의 유망성 평가
-*   **기술 수준**: 전략 기술(Lv1~2), TRM 기술(Lv3~4)
-*   **기술 센싱 데이터**: 경쟁사 R&D 활동, 뉴스, 매체, 특허, 논문, R&D 펀딩 데이터 등
+*   **Definition of Technology**: The totality of knowledge, experience, know-how, physical entities, and procedures necessary to produce items and services that increase human utility by using science.
+*   **Types of Technology**: Classified functionally into basic, standard, applied, cutting-edge, proprietary, known, core, emerging, and scouting technologies, etc.
+*   **Criteria for Promising Technologies**: May vary by researcher or organization and consider the importance of technology, the capabilities of the company, timeliness, and impact.
+*   **Promising Technology from a Data Analysis Viewpoint**: Utilizing evaluation of timeliness and impact for promising technology assessment.
+*  **Technology Level**: Divided into strategic technology (Lv1~2) and TRM technology (Lv3~4).
+*  **Data for Technology Sensing/Analysis**: Competitor R&D activities, news, media information, patents, research papers, R&D funding data, etc.
 
-### 8. 기술 탐색
+### 8. Technology Exploration
 
-*   **Lv.3~4 세부 기술**: 경쟁사 R&D 활동 데이터 활용 (특허, 논문), 최근 2년 내 데이터 완결성 문제
-*   **Lv.1~2 전략 기술**: 국책 연구소, 기업 선행 연구소 R&D 동향, 국가별 R&D 투자 데이터 활용, R&D 투자 데이터의 후향적 특성 대체
-*   **미래 기술 트렌드**: Gartner Hype Cycle, MIT 10대 혁신 기술 활용
+*   **Level 3-4 Detailed Technology Exploration**: Uses competitor R&D activity data (patents, papers), with a limitation on data within the past two years lacking completeness
+*  **Level 1-2 Strategic Technology Exploration**: Tracks R&D trends of national research institutes and company advanced research institutes, using country specific R&D investment data to supplement the retrospective characteristics of patent/paper data.
+*   **Future Technology Trends**: Utilizing the Gartner Hype Cycle and MIT 10 Innovation Technologies.
 
-### 9. 기술 혁신의 과정 (Innovation Funnel)
+### 9. The Technology Innovation Process (Innovation Funnel)
 
-*   **단계**: 아이디어 도출 → 컨셉 구체화 → 제품화, 조직 외부로부터 아이디어나 기술 흡수
+*   **Steps**: Idea Derivation → Concept Concretization → Production, organization absorbs ideas or technology from the outside.
 
-### 10. 일반적인 미래 예측 방법
+### 10. General Future Prediction Methods
 
-*   **창의성 기반**: 시나리오 예측, 에세이, 시뮬레이션
-*   **전문성 기반**: 전문가 패널, 로드맵핑, 델파이, 인터뷰, 다항목 의사결정
-*   **상호작용 기반**: 미래 워크샵, 브레인스토밍, 컨퍼런스/포럼, 소비자 패널, 설문
-*   **데이터 기반**: 문헌 고찰, 외삽법, 문헌 분석 (특허 분석), 벤치마킹
+*   **Creativity-Based**: Scenario prediction/analysis, essays, simulations
+*   **Expertise-Based**: Expert panels, roadmapping, Delphi, interviews, multi-criteria decision making
+*   **Interaction-Based**: Future workshops, brainstorming, conferences/forums, consumer panels, surveys
+*  **Data-Based**: Literature review, extrapolation, literature analysis (patent analysis), benchmarking
 
-### 11. 네트워크 분석
+### 11. Network Analysis
 
-*   **정의**: 노드와 엣지로 구성된 네트워크를 통해 노드 간 관계 파악
-*   **필요 데이터**: 노드 간 관계(엣지)를 정의하는 데이터, 동시출현, 방향성 정보
-*   **행렬**: Node-Edge-Weight, 인접 행렬
-*   **관계성**: 동시출현, 방향성, 유사도
-*   **Centrality**: Degree, Closeness, Betweenness, Eigenvector (각 노드의 중요도 측정)
-*   **HITS 통계량**: Hub score와 Authority score 기반 노드 평가
-*   **네트워크 유형**: 1 Mode (단일 노드), 2 Mode (두 종류 노드)
+*   **Definition**: The analysis to identify the relationships between Nodes by structuring networks consisting of Nodes and Edges.
+*   **Required Data**: Data that has a relationship (Relationship; Edge) between analysis targets (Nodes). Data where the relationship (Relationship) is defined through co-occurrence and directionality etc. can be utilized.  A network can also be drawn without a direction of an Edge. (= Undirected graph).
+*   **Matrices**: Node-Edge-Weight Matrix, Adjacency Matrix.
+*   **Relationship**: Primarily defined through co-occurrence, directionality, similarity, etc.
+*   **Centrality**:  Degree, Closeness, Betweenness, Eigenvector (the measurement of the relative importance of nodes in a network)
+*   **HITS Statistics**: Algorithms that evaluate nodes based on Hub scores and Authority scores.
+*   **Network Type**: 1 Mode (single node type), 2 Mode (two node types)
 
-### 12. 특허 데이터
+### 12. Patent Data
 
-*   **특허**: 발명자에게 부여되는 독점적 권리, 기술 공개에 대한 대가, 독점권 부여
-*   **생**: 출원 후 1년 6개월 ~ 2년 뒤 자동 공개, 우선심사청구 시 6개월 내 공개 가능
-*   **사**: 권리 기간 만료, 침해 소송, 등록 유지 비용 미납, 등록 철회
-*   **출원/등록**: 신규성, 진보성, 산업이용가능성 평가 기반, 거절 시 재심사 가능
-*   **데이터**: 정형(특허번호, 출원인, IPC, CPC) 및 비정형(제목, 요약, 청구항) 데이터 포함
-*   **논문 데이터**: 인용 DB, 원문 DB, 빅데이터급 DB
-*   **패밀리 특허**: 우선권 번호 기반 연계, 중복 제거 필요
-*   **동시출현 Field**: CPC 코드 등, 동시 존재 정보
-*   **방향성 Field**: 인용/피인용 관계
-*   **문제점**: 과거 데이터, 개량 기술 중심, IPC/CPC 분류 오류 가능성, 기술 내용 이해의 어려움
+*   **Patent**: An exclusive and privileged right granted to an inventor. In return for a disclosure of a new technology, exclusive rights to that technology are granted for a limited time.
+*   **Patent Life**: Automatically made public to the general public about 1 year and 6 months to 2 years after the patent application is filed, or may be made public in 6 months if a request for priority examination is made.
+*   **Patent Death**: Termination upon expiration of patent period, cancellation by patent infringement lawsuit, expiration due to unpaid registration maintenance fees, withdrawal of registration.
+*   **Application/Registration**: Evaluated based on novelty, inventiveness, and industrial applicability, rejection is possible with a chance for re-examination.
+*  **Data**: Structured (patent number, applicant, IPC, CPC) and unstructured (title, summary, claims, etc.) data included.
+*   **Paper Data**: Citation DB, Original Text DB, Big Data DB
+*   **Patent Family**: Interlinked based on priority number, redundant data should be removed
+*   **Co-occurrence Fields**: CPC code etc., information on co-existing fields.
+*   **Directionality Fields**: Citation/being-cited relationships.
+*   **Problems with Patents**: Past data, mostly improvement technologies, possible errors in the IPC/CPC classification, and difficulties in understanding the technical content.
 
-### 13. 특허 검색식 작성
+### 13. Formulating Patent Search Queries
 
-*   **Field 선별**: IPC, CPC, 제목, 요약 등 검색 Field 선택
-*   **키워드 검색**: 핵심 키워드 도출, 동의어/유사어/파생어/하위어 고려, 제목/요약/청구항 대상 검색
-*   **CPC 검색**: CPC 코드 검색, 자연어 기반 검색 기능 활용
-*   **NOT 조건**: 불용어, 불필요한 CPC 코드 제외
-*   **기타 고려사항**: 사업화 국가, 데이터 범위, 특허 종류 (등록/출원)
+*  **Field Selection**: Selection of search field, including IPC, CPC, Title, Summary
+*   **Keyword Search**: Extracting core keywords, considering synonyms/similar words/derivatives/lower-level terms, and searching in title/summary/claims fields.
+*   **CPC Search**: Searching through CPC codes and using a natural language-based CPC search function.
+*   **NOT Conditions**: Excluding stop words and unnecessary CPC codes.
+*   **Other Considerations**: Area of commercialization, data range, patent type (registered/application)
 
-### 14. Gephi 활용 및 실습
+### 14. Using Gephi and Practice
 
-*   **소개**: Visual analytics, EDA 도구, 그래프 실시간 시각화, 다양한 기능
-*   **화면 꾸미기**: 레이아웃, Appearance, Statistics, Filter 설정
-*   **데이터 Import**: 엑셀, CSV 파일 import (Matrix, Adjacency list 형식)
-*   **Statistics**: Average Degree, Weighted Degree, Network Diameter 계산
-*   **Modularity 분석**: 연결성이 높은 노드 간 군집화
-*   **Node 색칠**: Modularity 값, 특정 속성 기준
-*   **Layout 조절**: ForceAtlas2 알고리즘 적용
-*   **Node/Edge Filtering**: 특정 기준 필터링
-*   **Data laboratory**: 데이터 Export, 군집 데이터 추가
-*   **Preview**: 네트워크 시각화 결과 미리 보기
+*   **Introduction**: Tool for Visual Analytics, EDA, realtime visualization of graphs, has many functions.
+*   **Setting Up the Screen**: Setting the Layout, Appearance, Statistics, and Filter.
+*   **Data Import**: Import data from Excel and CSV files (Matrix, Adjacency list formats).
+*   **Statistics**: Calculate Average Degree, Weighted Degree, and Network Diameter.
+*   **Modularity Analysis**: Calculation of grouping between Nodes with high connectivity.
+*  **Node Coloring**: Colors nodes based on Modularity values and attributes.
+*   **Layout Adjustment**: Adjust layout by selecting desired criteria and applying the ForceAtlas2 algorithm.
+*   **Node/Edge Filtering**: Filtering data based on selected criteria.
+*   **Data Laboratory**: Exporting Data and adding group data.
+*   **Preview**: Ability to preview the visualization.
 
-### 15. 문서 유사도 네트워크
+### 15. Document Similarity Network
 
-*   **One-hot vector**: 문서 내 단어 빈도 표현, Doc-Term-Matrix
-*   **TF-IDF**: 단어 빈도 기반 가중치 부여
-*   **Dense vector (Doc2Vec)**: 문서 임베딩을 통해 유사도 계산
-*   **Bibliographic coupling**: 문서 간 공통 인용 관계 기반 분석
+*   **One-hot Vector**: Representation of word frequency in a document, Doc-Term-Matrix.
+*  **TF-IDF**: Method to weight word frequency.
+*  **Dense vector (Doc2Vec)**: Embedding documents into a vector in order to calculate similarity.
+*   **Bibliographic coupling**: Analyzes relationships by looking at shared citation relationships between documents.
 
-### 16. 기타 툴 소개
+### 16. Introduction of Other Tools
 
-*   UNICET, Pajek 등
+*   UNICET, Pajek etc.
 
-## 📝 결론
+## 📝 Conclusion
 
-이 가이드를 통해 특허 데이터를 활용한 기술 동향 분석의 기초를 이해하고, 실제 데이터 분석 및 시각화 과정을 경험할 수 있습니다. 특허 데이터는 과거의 기술 동향을 보여주지만, 이를 통해 미래 기술 발전 방향을 예측하고 전략적인 의사결정을 내릴 수 있습니다.
+This guide helps to understand the basics of technology trend analysis using patent data, and provides an experience of the actual data analysis and visualization process. Patent data shows past technology trends, and through that it is possible to anticipate the direction of future technology development and make strategic decisions.
 
-## 🔗 발표자 정보
+## 🔗 Instructor Information
 
-*   **강사**: 김동하
-*   **이메일**: eastsea17@gmail.com
+*   **Instructor**: Dongha Kim
+*   **Email**: eastsea17@gmail.com
